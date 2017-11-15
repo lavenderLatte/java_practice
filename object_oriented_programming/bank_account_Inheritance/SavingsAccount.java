@@ -1,5 +1,5 @@
 /*
-add: apply interest rate once after each month
+improve it later: apply interest rate once after each month
 */
 
 package cis59_1030_exercise6;

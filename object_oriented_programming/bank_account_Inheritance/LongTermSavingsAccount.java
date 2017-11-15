@@ -1,5 +1,5 @@
 /*
-add : add bonus at the end of saving_period, convert LTSA into Checking account at the end of saving_period
+improve it later: add bonus at the end of saving_period, convert LTSA into Checking account at the end of saving_period
 */
 
 package cis59_1030_exercise6;
