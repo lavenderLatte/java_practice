@@ -7,10 +7,10 @@ import java.util.Arrays;
 
 public class DiceTally_mod 
 {
-    /* [ Excercise 6 ] 
-        Modify the solution of exercise 5 to use an array 
-        and ask user how many sides are on each of 2 dices. 
-        The maximum nuber of sides of the dice is 50. 
+    /* [ Challenge ] 
+        White a Java code to simulate rolling two dice 600,000 times.
+        Ask user how many sides are on each of two dices. 
+        Tally the result of each roll in an array and display it at the end. 
     */
     
     public static int roll(int lowerBound, int a_upperBound, int b_upperBound)
@@ -27,8 +27,8 @@ public class DiceTally_mod
     
     public static int[] tally()        
     {
-        /* 
-        When function tally() is called, it will ask user to decide the number of sides of each dice.
+        /* [ About tally() ] 
+        : When function tally() is called, it will ask user to decide the number of sides of each dice.
         Once that's done it will create an array that is 1 size longer than the sum of two dice. 
         For each toss, it will call roll() function to get result and simultaneously update the number of result in the array.
         Once complete all the rolls, it will return the tally result array. 
