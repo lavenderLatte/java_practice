@@ -1,19 +1,20 @@
+// @author hana ra
 
-package cis59_1016_exercise5;
+package composition;
+
+/* [ Student Class ]
+    - Stores information such as id, name, and grade of each student
+    - Can set or get these information from the main function 
+*/
 
 public class Student 
 {
-    /* [ Exercise 5 – Student ]
-        Complete the constructors, set/get functions toString and anything else 
-        to support the main program code
-    */
-    
     // Data Attributes
     private int id;
     private String name;
     private double grade;
     
-    // Constructors and overloaded ones
+    // Default and Overloaded Constructors
     public Student()
     {
         id = 0;
@@ -26,11 +27,17 @@ public class Student
         name = s;
         grade = d;                
     }     
-    public Student(int i, String s) // when grade is unknown
+    public Student(int i, String s)
     {
         id = i;
         name = s;
         grade = 0.0;
+    }
+    public Student(Student s) // copy constructor
+    {
+        id = s.get_id();
+        name = s.get_name();
+        grade = s.get_grade();
     }
     
     // Setters
@@ -38,13 +45,13 @@ public class Student
     {
         id = i;
     }
-    public void set_name(String s)
+    public void set_name(String n)
     {
-        name = s;
+        name = n;
     }
-    public void set_grade(double d)
+    public void set_grade(double g)
     {
-        grade = d;
+        grade = g;
     }
     
     // Getters
@@ -62,13 +69,9 @@ public class Student
     }
     
     // toString method
+    @Override
     public String toString()
     {
-        return String.format("%s(SID: %04d): %.2f ", get_name(), get_id(), get_grade());  
+        return String.format("%s(SID: %04d): %.2f ", name, id, grade);  
     }
-    
-    // anything else? equals method
-    
-
-    
 }
