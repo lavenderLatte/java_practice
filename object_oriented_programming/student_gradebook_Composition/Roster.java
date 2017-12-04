@@ -153,4 +153,15 @@ public class Roster
         }        
         return highest;
     }
+
+    
+    // toString method
+    @Override
+    public String toString()
+    {
+        String output = String.format("Course Name: %s\n", course_name);
+        output += "\tCurruntly " + number_of_students + " students enrolled.";
+    
+        return output;
+    }
 }
