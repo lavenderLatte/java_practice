@@ -1,14 +1,16 @@
 
-package cis59_1030_exercise6;
+// @author: hana ra
+package inheritance;
 
 import java.time.LocalDateTime;
 
 public class Account 
 {
-    /* class Account 
-        - a Superclass that has id, current balance, and created date info
-        - can withdraw as long as an amount is smaller than current balance
-        - can also deposit some amount  
+    /* [ Account ]
+        - A non-abstract superclass that has id, current balance, and created date info
+        - Can withdraw as long as an amount doesn't exceed current balance
+        - Can also deposit some amount  
+        - Inheriting classes are SavingsAccount, CheckingAccount, and LongTermSavingsAccount
     */
     
     // Data Attributes

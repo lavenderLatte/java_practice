@@ -1,14 +1,15 @@
 
-package cis59_1030_exercise6;
+// @author: hana ra
+package inheritance;
 
 public class CheckingAccount extends Account
 {    
     /* class CheckingAccount
-        - a Subclass of Account
-        - uniquely has routing number info
-        - can withdraw even the amount exceed the current balance but once the blance becomes <= 0, withdraw disabled
-        - by depositing some amount, it can enable the withdrawing
-        - follows Account way of depositing  
+        - A subclass of Account
+        - Uniquely has routing number info
+        - Can withdraw even the amount exceed the current balance but once the blance becomes <= 0, withdraw disabled
+        - By depositing some amount, it can enable the withdrawing
+        - Follows Account way of depositing  
     */
     
     // Data Attribute

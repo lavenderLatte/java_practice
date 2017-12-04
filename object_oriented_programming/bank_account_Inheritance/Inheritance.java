@@ -1,25 +1,11 @@
 
-package cis59_1030_exercise6;
+// @author: hana ra
+package inheritance;
 
-public class CIS59_1030_Exercise6 
+public class Inheritance
 {
     public static void main(String[] args) 
-    {
-//        Customer c = new Customer();
-//        if (c.addAccount("1A2B3C"))
-//            System.out.println("Account added");
-//        
-//        System.out.printf("id of Customer: %s\n", c.get_Cid());
-//        System.out.printf("id of SavingsAccount: %s\n", c.get_SAid());
-//        
-//        
-//        SavingsAccount a = new SavingsAccount();
-//        System.out.println(a.get_id());
-//        
-//        SavingsAccount b = new SavingsAccount("1A2B3C");
-//        System.out.println(b.get_id());
-        
-        
+    {       
         // Testing Account-class
         Account a = new Account("1A2B3C");
         a.set_current_balance(14.55); 
@@ -60,16 +46,7 @@ public class CIS59_1030_Exercise6
         System.out.println(ltsa.within_period());
         
         ltsa.deposit(5.55);
-        System.out.println(ltsa.get_current_balance());
-        
-        
-        
-       
-        
-        
-        
-        
-        
+        System.out.println(ltsa.get_current_balance());      
     }
 }
    

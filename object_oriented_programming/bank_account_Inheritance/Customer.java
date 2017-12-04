@@ -3,7 +3,8 @@
 improve it later: use polymorphism for acconts array?
 */
 
-package cis59_1030_exercise6;
+// @author: hana ra
+package inheritance;
 
 public class Customer 
 {

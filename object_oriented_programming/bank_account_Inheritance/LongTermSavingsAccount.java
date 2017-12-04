@@ -1,18 +1,15 @@
-/*
-improve it later: add bonus at the end of saving_period, convert LTSA into Checking account at the end of saving_period
-*/
-
-package cis59_1030_exercise6;
+// @author: hana ra
+package inheritance;
 
 import java.time.LocalDateTime;
 
 public class LongTermSavingsAccount extends Account
 {
     /* class LongTermSavingsAccount
-        - a Subclass of Account
-        - uniquely has saving period and bonus info
-        - can't withdraw nor deposit during the saving period time
-        - once saving period time is over, can withdraw but still can't deposit 
+        - A subclass of Account
+        - Uniquely has saving period and bonus info
+        - Can't withdraw nor deposit during the saving period time
+        - Once saving period time is over, can withdraw but still can't deposit 
     */
     
     // Data Attribute
@@ -118,6 +115,8 @@ public class LongTermSavingsAccount extends Account
         return String.format("Longterm Saving Account# %s was created on %s", id, created_date);
     } 
             
-    
+    /*
+    improve it later: add bonus at the end of saving_period, convert LTSA into Checking account at the end of saving_period
+    */
    
 }

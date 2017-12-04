@@ -1,5 +1,6 @@
 
-package cis59_1030_exercise6;
+// @author: hana ra
+package inheritance;
 
 public class Date
 {
@@ -55,10 +56,10 @@ public class Date
     {
         return year;
     }
+
     @Override
     public String toString()
     {
         return String.format("%02d/%02d/%04d", month, day, year);
-//        return String.format("%2d/%2d/%4d", month, day, year); // THIS WAS ORIGINAL
     }    
 }

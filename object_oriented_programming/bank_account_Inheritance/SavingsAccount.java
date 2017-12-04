@@ -1,16 +1,13 @@
-/*
-improve it later: apply interest rate once after each month
-*/
-
-package cis59_1030_exercise6;
+// @author: hana ra
+package inheritance;
 
 public class SavingsAccount extends Account
 {
     /* class SavingsAccount
-        - a Subclass of Account
-        - uniquely has interest rate and the number of withdraw execution info
-        - can withdraw as long as the amount doesn't exceed the current balance and the number of allowed withdrawal 
-        - follows Account's way of depositing  
+        - A subclass of Account
+        - Uniquely has interest rate and the number of withdraw execution info
+        - Can withdraw as long as the amount doesn't exceed the current balance and the number of allowed withdrawal 
+        - Follows Account's way of depositing  
     */
     
     // Data Attributes
@@ -82,5 +79,8 @@ public class SavingsAccount extends Account
         return String.format("Savings Account# %s was created on %s. Current balance is $%.2f", id, created_date, current_balance);
     }
     
+    /*
+    improve it later: apply interest rate once after each month
+    */
 
 }
