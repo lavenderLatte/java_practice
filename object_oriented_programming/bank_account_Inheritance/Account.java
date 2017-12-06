@@ -9,7 +9,7 @@ public class Account
     /* [ Account ]
         - A non-abstract superclass that has id, current balance, and created date info
         - Can withdraw as long as an amount doesn't exceed current balance
-        - Can also deposit some amount  
+        - Can also deposit amount  
         - Inheriting classes are SavingsAccount, CheckingAccount, and LongTermSavingsAccount
     */
     
